@@ -1,5 +1,5 @@
-Template.tutorialBoard.helpers({
-    'tutorial': function(){
-        return tutorialList.find();
+Template.resourceBoard.helpers({
+    'resource': function(){
+        return resourceList.find();
     }
 });

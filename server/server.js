@@ -14,14 +14,14 @@ Meteor.startup(() => {
   }
 });
 
-  tutorialList.allow({
+  resourceList.allow({
   insert: function () {
     return false;
   }
 });
 
 
-  tutorialList.allow({
+  resourceList.allow({
   update: function () {
     return false;
   }
@@ -30,13 +30,13 @@ Meteor.startup(() => {
     
 
 Meteor.methods({
-'insertTutorialData' : function(tutorialNameVar,tutorialUrlVar)
+'insertResourceData' : function(resourceNameVar,resourceUrlVar)
 {
 var currentUserId = Meteor.userId();
 var createdAt = Meteor.user().createdAt;
-tutorialList.insert({
-  name: tutorialNameVar,
-  url: tutorialUrlVar,
+resourceList.insert({
+  name: resourceNameVar,
+  url: resourceUrlVar,
   score: 0, 
   createdBy : currentUserId,
   createdAt : createdAt

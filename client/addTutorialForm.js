@@ -1,24 +1,24 @@
 
 
-Template.addTutorialForm.events({
+Template.addResourceForm.events({
 
 'submit form' : function(event,template)
 {
 event.preventDefault();
 
  
-          var tutorialNameVar= event.target.tutorialName.value;
-          var tutorialUrlVar= event.target.tutorialUrl.value;
-          if (!tutorialNameVar || !tutorialUrlVar)
+          var resourceNameVar= event.target.resourceName.value;
+          var resourceUrlVar= event.target.resourceUrl.value;
+          if (!resourceNameVar || !resourceUrlVar)
             return;
          
          
          
 
-          Meteor.call('insertTutorialData', tutorialNameVar,tutorialUrlVar);
+          Meteor.call('insertResourceData', resourceNameVar,resourceUrlVar);
 
-          event.target.tutorialName.value="";
-          event.target.tutorialUrl.value="";
+          event.target.resourceName.value="";
+          event.target.resourceUrl.value="";
           
 
           Meteor.setTimeout(function(){  

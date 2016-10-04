@@ -1,6 +1,6 @@
-Meteor.publish('theTutorials', function(){
+Meteor.publish('theResources', function(){
  var currentUserId = this.userId;
- return tutorialList.find();
+ return resourceList.find();
 });
 
 Meteor.publish("userInformation", function() {

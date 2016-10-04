@@ -1,3 +1,3 @@
-Meteor.subscribe('theTutorials');
+Meteor.subscribe('theResources');
   Meteor.subscribe('userInformation');
   

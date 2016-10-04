@@ -1,8 +1,8 @@
-Template.tutorialDisplay.helpers({
+Template.resourceDisplay.helpers({
 upvotedClass: function() {
     var userId = Meteor.userId();
-    var tutorial = tutorialList.findOne(this._id);
-    if (userId && !_.include(tutorial.upvoterIds, userId)) {
+    var resource = resourceList.findOne(this._id);
+    if (userId && !_.include(resource.upvoterIds, userId)) {
       return 'upvotable';
     } else if(userId)
     {
@@ -10,20 +10,20 @@ upvotedClass: function() {
     }
   },
 
- 'tutorial': function(){
-        return tutorialList.find();
+ 'resource': function(){
+        return resourceList.find();
     }
 });
 
 
 
-Template.tutorialDisplay.events({
+Template.resourceDisplay.events({
  
     "click .url": function (event, template) {
     event.preventDefault();
-    var tutorialId = this._id;
-    Session.set('selectedTutorial', tutorialId);
-    var selectedTutorial = Session.get('selectedTutorial');
+    var resourceId = this._id;
+    Session.set('selectedResource', resourceId);
+    var selectedResource = Session.get('selectedResource');
     }
 
  });

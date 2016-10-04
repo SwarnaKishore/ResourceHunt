@@ -1,0 +1,15 @@
+<template name="tutorialBoard">
+ <div class="container">
+   
+  		{{> addTutorialForm}} 
+ 
+</div>
+
+
+<div class="container">
+  {{#each tutorial}}
+    {{> tutorialDisplay}}
+{{/each}}
+      
+  </div>
+</template>

@@ -1,0 +1,51 @@
+ 
+<body>
+ <script type="text/javascript">
+   $(document).ready(function() {
+ 
+    $(".button-collapse").sideNav();
+        
+  });
+</script>
+</body>
+
+ <template name="Layout">
+
+
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+<nav>
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo">Tutorial Hunt</a>
+      <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Home</a></li>
+        
+      </ul>
+      <ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">Sass</a></li>
+       
+      </ul>
+    </div>
+  </nav>
+{{> loginButtons}}
+
+{{> yield}}
+
+
+
+<footer>
+
+        <div class="row">
+         <div class="col l1 offset-l5 s2 offset-s3 m1 offset-m4">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://tutorialhunt.meteor.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+         </div>
+         <div class="col l1 s2 m1">
+              <a href="https://twitter.com/intent/tweet?source=http%3A%2F%2Ftutorialhunt.meteor.com%2F&text=Check%20out%20Tutorial%20hunt%20to%20view%20and%20share%20the%20best%20tutorials%20at%20one%20place:%20http%3A%2F%2Ftutorialhunt.meteor.com%2F&via=swarnakishoree" target="_blank" title="Tweet"><i class="fa fa-twitter"></i></a>
+         </div>
+         <div class="col l1 s2 m1">
+<a href="https://plus.google.com/share?url=http%3A%2F%2Ftutorialhunt.meteor.com%2F" target="_blank" title="Share on Google+"><i class="fa fa-google-plus"></i></a>
+                  </div>
+                </div>
+          
+        </footer>
+</template>

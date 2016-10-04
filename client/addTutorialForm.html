@@ -1,0 +1,42 @@
+
+<template name="addTutorialForm">
+
+  <a id="addTutorial" href="#!" onclick="Show_Div(Div_1)"> Click here to add
+  </a>
+
+<div id="Div_1" style="display: none;">
+<div class="card">
+<div class="card-content">
+<form class="col s12 m6 l4" name="addForm">
+
+
+          <div class="row">
+          <div class="input-field col s12 m6 l6">
+          <input id="tutorialName" type="text" class="validate">
+          <label for="tutorialName">Enter name of tutorial</label>
+          </div>
+          </div>
+
+          <div class="row">
+          <div class="input-field col s12 m6 l6">
+          <input id="tutorialUrl" type="url" class="validate">
+          <label for="tutorialUrl">Enter url of tutorial</label>
+          </div>
+          </div>
+
+
+ <button class="btn waves-effect waves-light" type="submit" name="action">Add tutorial
+    <i class="mdi-content-send right"></i>
+  </button>
+
+</form>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+</template>

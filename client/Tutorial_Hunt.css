@@ -1,0 +1,173 @@
+.at-social-btn {
+   margin-bottom: 15px;
+ }
+/*footer.page-footer {
+  background-color: #ffffff;
+  color: black;
+}
+*/
+
+
+.TutorialBadge {
+    position: relative;
+    background-color: #C8CCCB;
+    color: white;
+    font-weight: 100;
+    padding: 2px;
+    text-align: center;
+    min-width: 1.5rem;
+    border-radius: 50%;
+}
+
+footer .fa{
+  color: #26a69a;
+  font-size: 25px;
+}
+.tutHeading{
+  margin-left: 30px;
+  margin-top: 25px;
+  font-weight: 500;
+  color: #ee6e73;
+  }
+
+p {
+  line-height: 2rem;
+}
+
+.collection a.collection-item{
+	color:black;
+   border-bottom: 1px solid #fbe9e7;
+}
+ .collection a.collection-item:not(.active):hover {
+      background-color: #fbe9e7; }
+
+footer {
+  margin: 30px;
+}
+.brand-logo{
+  font-family: 'Open Sans', sans-serif;
+}
+@media screen only and (max-width: 320px) {
+    .fontSize{
+        font-size: 5px;
+    }
+}
+
+
+span.badge
+{
+  position: relative;
+  left:10px;
+  background-color: #26a69a;
+  color: white;
+  border-radius: 3px;
+  font-weight: 100;
+}
+
+.none{
+  display:none;
+}
+.post{
+  webkit-transition: background, 0.1s;
+  -moz-transition: background, 0.1s;
+  transition: background, 0.1s;
+  background: white;
+  font-size: 18px;
+  min-height: 62px;
+  line-height: 17px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  clear: both;
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 0 -10px;
+  cursor: pointer;
+  border-radius: 3px;
+  position: relative;
+}
+.title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #534540;
+  margin: 0px;
+  margin-bottom: 3px;
+}
+.url{
+  
+  text-decoration: none;
+  color: #534540;
+  font-size: 16px;
+  font-weight: 100;
+  margin: 6px 2px 0 0px;
+}
+#addTutorial
+{
+  color: #ee6e73;
+  text-decoration: none;
+}
+.post:hover{
+  background-color: #fbe9e7;
+}
+.upvote
+{
+  background: #edeceb;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 0 rgba(83,69,64,0.3),0 1px 1px 0 rgba(0,0,0,0.2);
+  float: left;
+  height: 44px;
+  margin: 0 11px 0 0;
+  position: relative;
+  text-align: center;
+  width: 34px;
+}
+.upvote--arrow {
+  border-bottom: 14px solid #534540;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 14px solid transparent;
+  left: 10px;
+  position: absolute;
+  top: -9px;
+}
+
+.tagLine
+{
+  margin:25px;
+  font-family: 'Dancing Script', cursive;
+}
+.upvote.upvoted .upvote--count {
+  color: #ee6e73;
+}
+.upvote.upvoted .upvote--arrow {
+  border-bottom-color: #ee6e73;
+}
+#addScore:hover #upArrow{
+   border-bottom-color: #ee6e73;
+}
+.upvote--count {
+  color: #534540;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 16px;
+  margin: 24px 0 0;
+}
+
+
+
+
+.load-more {
+    display: block;
+    border-radius: 3px;
+    background: rgba(0, 0, 0, 0.05);
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+.load-more:hover {
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.1);
+}
+/* CSS declarations go here */
